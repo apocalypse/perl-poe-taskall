@@ -5,7 +5,7 @@ use warnings;
 
 use vars qw( $VERSION );
 BEGIN {
-	$VERSION = '1.00';
+	$VERSION = '1.01';
 }
 
 # End of module
@@ -28,7 +28,7 @@ Big thanks also goes to KANE + BiNGOs for helping me navigate CPANPLUS::Backend!
 
 =head1 COPYRIGHT AND LICENSE
 
-Copyright 2008 by Apocalypse
+Copyright 2009 by Apocalypse
 
 This library is free software; you can redistribute it and/or modify
 it under the same terms as Perl itself.

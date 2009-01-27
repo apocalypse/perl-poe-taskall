@@ -18,3 +18,4 @@ t/a_manifest.t
 t/a_distribution.t
 t/a_compile.t
 t/a_dosnewline.t
+t/a_metayml.t
