@@ -88,8 +88,7 @@ my $build = Module::Build->new(
 
 	# To actually build!
 	'configure_requires'	=> {
-		'Module::Build'		=> 0,
-		'CPANPLUS'		=> '0.90',
+		'CPANPLUS'	=> '0.90',
 	},
 
 	# All of POE's deps, ahahaha
