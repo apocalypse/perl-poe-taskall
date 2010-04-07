@@ -2,23 +2,36 @@
 exit 0 if $ENV{AUTOMATED_TESTING};
 
 # Build.PL
+use strict; use warnings;
 use Module::Build;
-use strict;
-use warnings;
 
 # CPANPLUS stuff we need
 use CPANPLUS::Backend;
 use CPANPLUS::Configure;
+
+# silence CPANPLUS!
+{
+	no warnings 'redefine';
+	sub Log::Message::Handlers::cp_msg { return };
+	sub Log::Message::Handlers::cp_error { return };
+}
 
 # Okay, get all the distributions that are POE :)
 # init the backend ( and set some options )
 my $conf = CPANPLUS::Configure->new;
 $conf->set_conf( 'verbose' => 0 );
 $conf->set_conf( 'no_update' => 1 );
-my $cb = CPANPLUS::Backend->new( $conf );
+
+# ARGH, CPANIDX doesn't work well with this kind of search...
+if ( $conf->get_conf( 'source_engine' ) =~ /CPANIDX/ ) {
+	warn "Disabling CPANIDX for CPANPLUS";
+	$conf->set_conf( 'source_engine' => 'CPANPLUS::Internals::Source::Memory' );
+}
 
 # search for matching modules/packages
-my @mods = $cb->search( 'type' => 'module', 'allow' => [ qr/^POE::/ ] );
+my $cb = CPANPLUS::Backend->new( $conf );
+my @mods = $cb->search( 'type' => 'module', 'allow' => [ qr/^POEx?::/ ] );
+warn "Found " . scalar @mods . " dists";
 
 # collate the data
 my %seen;
@@ -53,6 +66,9 @@ foreach my $m ( @mods ) {
 # invert the sense of the hash to prepare for prereq
 %seen = map { $_->module => $_->version } values %seen;
 
+# we need a recent perl
+$seen{'perl'} = '5.006';
+
 my $build = Module::Build->new(
 	# look up Module::Build::API for the info!
 	'dynamic_config'	=> 0,
@@ -63,18 +79,20 @@ my $build = Module::Build->new(
 	'dist_author'		=> 'Apocalypse <APOCAL@cpan.org>',
 
 	'create_packlist'	=> 1,
+	'create_makefile_pl'	=> 'traditional',
 	'create_readme'		=> 1,
+	'create_license'	=> 1,
+	'sign'			=> 0,
 
 	'test_files'		=> 't/*.t',
 
-	'add_to_cleanup'	=> [ 'META.yml', 'README' ],	# automatically generated
-
-	# FIXME this throws a warning, but is harmless
+	# To actually build!
 	'configure_requires'	=> {
 		'Module::Build'		=> 0,
-		'CPANPLUS'		=> '0.84',
+		'CPANPLUS'		=> '0.90',
 	},
 
+	# All of POE's deps, ahahaha
 	'requires'		=> \%seen,
 );
 

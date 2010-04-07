@@ -1,5 +1,16 @@
 Revision history for Perl extension Task::POE::All.
 
+* 1.02
+
+	Removed all AUTHOR tests and replaced with Test::Apocalypse
+	Cleaned up POD a bit
+	Add POEx::* modules too, thanks nperez!
+	Cleaned up Build.PL to be a bit more smarter
+
+* 1.01
+
+	Added a_metayml.t AUTHOR test
+
 * 1.00
 
 	Initial release ( import from Bundle::POE::All )
