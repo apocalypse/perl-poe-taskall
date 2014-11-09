@@ -1,16 +1,21 @@
-Revision history for Perl extension Task::POE::All.
+Revision history for {{$dist->name}}
 
-* 1.02
+{{$NEXT}}
+
+	Converted to Dist::Zilla for the release process!
+	Updates to the auto-generated files
+
+1.02	0000-00-00T00:00:00Z UTC
 
 	Removed all AUTHOR tests and replaced with Test::Apocalypse
 	Cleaned up POD a bit
 	Add POEx::* modules too, thanks nperez!
 	Cleaned up Build.PL to be a bit more smarter
 
-* 1.01
+1.01	0000-00-00T00:00:00Z UTC
 
 	Added a_metayml.t AUTHOR test
 
-* 1.00
+1.00	0000-00-00T00:00:00Z UTC
 
 	Initial release ( import from Bundle::POE::All )

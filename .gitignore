@@ -1,4 +1,2 @@
-LICENSE
-META.yml
-README
-Makefile.PL
+/Task-POE-All-*
+/.build/
