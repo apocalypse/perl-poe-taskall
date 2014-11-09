@@ -59,10 +59,11 @@ foreach my $m ( @mods ) {
 my $string = <<'EOF';
 package Task::POE::All;
 
-# ABSTRACT: All of POE on CPAN and POEx too!
+# ABSTRACT: All of POE on CPAN
 
 1;
 =pod
+
 =head1 SYNOPSIS
 
 	die 'Not meant to be used directly';

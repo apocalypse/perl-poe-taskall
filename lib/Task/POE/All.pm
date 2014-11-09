@@ -1,9 +1,10 @@
 package Task::POE::All;
 
-# ABSTRACT: All of POE on CPAN and POEx too!
+# ABSTRACT: All of POE on CPAN
 
 1;
 =pod
+
 =head1 SYNOPSIS
 
 	die 'Not meant to be used directly';
@@ -44,6 +45,7 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Component::Server::SimpleHTTP::PreFork 2.10
 =pkg POE::Component::Server::SimpleSMTP 1.50
 =pkg POE::Component::Server::SimpleXMLRPC 0.02
+=pkg POE::Component::Server::Syslog 1.20
 =pkg POE::Component::Server::TacacsPlus 1.11
 =pkg POE::Component::Server::Time 1.14
 =pkg POE::Component::Server::Twirc 0.17
@@ -54,16 +56,18 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Component::Client::AMQP 0.03
 =pkg POE::Component::Client::AirTunes 0.01
 =pkg POE::Component::Client::BigBrother 1.00
+=pkg POE::Component::Client::CouchDB 0.05
 =pkg POE::Component::Client::DNS 1.053
 =pkg POE::Component::Client::DNS::Recursive 1.08
 =pkg POE::Component::Client::DNSBL 1.08
 =pkg POE::Component::Client::FTP 0.22
 =pkg POE::Component::Client::Feed 0.901
-=pkg POE::Component::Client::HTTP 0.949
 =pkg POE::Component::Client::HTTPDeferred 0.02
 =pkg POE::Component::Client::Halo 0.2
 =pkg POE::Component::Client::Icecast 0.6
+=pkg POE::Component::Client::Ident 1.16
 =pkg POE::Component::Client::Keepalive 0.272
+=pkg POE::Component::Client::LDAP 0.04
 =pkg POE::Component::Client::Lingr 0.04
 =pkg POE::Component::Client::MPD 2.000
 =pkg POE::Component::Client::MSN 0.03
@@ -77,7 +81,6 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Component::Client::Pastebot 1.16
 =pkg POE::Component::Client::Ping 1.174
 =pkg POE::Component::Client::RADIUS 1.04
-=pkg POE::Component::Client::REST 0.05
 =pkg POE::Component::Client::Rcon 0.23
 =pkg POE::Component::Client::SMTP 0.22
 =pkg POE::Component::Client::SOAP 0.01
@@ -100,12 +103,12 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Component::AIO 1.00
 =pkg POE::Component::Algorithm::Evolutionary 0.002001
 =pkg POE::Component::Amazon::S3 0.01
-=pkg POE::Component::App::PNGCrush 1.001004
 =pkg POE::Component::Archive::Any 0.002
 =pkg POE::Component::AssaultCube::ServerQuery 0.04
 =pkg POE::Component::AtomAggregator 1.0
 =pkg POE::Component::Basement 0.01
 =pkg POE::Component::BlogCloud 0.01
+=pkg POE::Component::Bundle::WebDevelopment 1.001004
 =pkg POE::Component::CD::Detect 1.1
 =pkg POE::Component::CD::Rip 1.2
 =pkg POE::Component::CPAN::Mirror::Multiplexer 0.04
@@ -133,7 +136,6 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Component::Enc::Flac 1.01
 =pkg POE::Component::Enc::Mp3 1.2
 =pkg POE::Component::Enc::Ogg 1.05
-=pkg POE::Component::FastCGI 0.19
 =pkg POE::Component::FeedAggregator 0.902
 =pkg POE::Component::Fuse 0.05
 =pkg POE::Component::Gearman::Client 0.03
@@ -143,11 +145,13 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Component::Hailo 0.10
 =pkg POE::Component::ICal 0.130020
 =pkg POE::Component::IKC 0.2402
+=pkg POE::Component::IRC 6.88
 =pkg POE::Component::IRC::Object 0.02
 =pkg POE::Component::IRC::Plugin::BaseWrap 1.001001
 =pkg POE::Component::IRC::Plugin::Blowfish 0.01
 =pkg POE::Component::IRC::Plugin::Bollocks 1.00
 =pkg POE::Component::IRC::Plugin::CPAN::Info 1.001002
+=pkg POE::Component::IRC::Plugin::ColorNamer 2.001003
 =pkg POE::Component::IRC::Plugin::CoreList 1.02
 =pkg POE::Component::IRC::Plugin::Donuts 0.07
 =pkg POE::Component::IRC::Plugin::Eval 0.07
@@ -177,7 +181,6 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Component::IRC::Plugin::WWW::CPANRatings::RSS 0.0106
 =pkg POE::Component::IRC::Plugin::WWW::Google::Time 0.0102
 =pkg POE::Component::IRC::Plugin::WWW::KrispyKreme::HotLight 0.06
-=pkg POE::Component::IRC::Plugin::WWW::Lipsum 2.001003
 =pkg POE::Component::IRC::Plugin::WWW::OhNoRobotCom::Search 0.002
 =pkg POE::Component::IRC::Plugin::WWW::Reddit::TIL 0.07
 =pkg POE::Component::IRC::Plugin::WWW::Vim::Tips 0.14
@@ -226,7 +229,6 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Component::ResourcePool 0.04
 =pkg POE::Component::ResourcePool::Resource::TokenBucket 0.01
 =pkg POE::Component::SASLAuthd 0.03
-=pkg POE::Component::SNMP 1.1006
 =pkg POE::Component::SNMP::Session 0.1202
 =pkg POE::Component::SSLify 1.008
 =pkg POE::Component::SSLify::NonBlock 0.41
@@ -242,7 +244,6 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Component::SmokeBox::Uploads::NNTP 1.00
 =pkg POE::Component::SmokeBox::Uploads::RSS 1.00
 =pkg POE::Component::SmokeBox::Uploads::Rsync 1.000
-=pkg POE::Component::Spread 0.02
 =pkg POE::Component::SubWrapper 2.01
 =pkg POE::Component::Supervisor 0.08
 =pkg POE::Component::Syndicator 0.06
@@ -268,7 +269,6 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Component::YubiAuth 0.07
 
 =pkgroup Data Parsers and Wheels
-=pkg POE::Filter::ASN1 0.01
 =pkg POE::Filter::Asterisk::Manager 0.08
 =pkg POE::Filter::BigBrother 0.13
 =pkg POE::Filter::Bzip2 1.58
@@ -278,16 +278,16 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Filter::DNS::TCP 0.06
 =pkg POE::Filter::ErrorProof 0.01
 =pkg POE::Filter::FSSocket 0.07
+=pkg POE::Filter::FastCGI 0.19
 =pkg POE::Filter::Finger 0.08
 =pkg POE::Filter::HTTP::Parser 1.06
 =pkg POE::Filter::HTTPD::Chunked 0.9
+=pkg POE::Filter::HTTPHead 0.949
 =pkg POE::Filter::Hessian 1.00
 =pkg POE::Filter::IASLog 1.08
-=pkg POE::Filter::IRC 6.88
 =pkg POE::Filter::IRC::Hybrid 0.996
 =pkg POE::Filter::IRCD 2.44
 =pkg POE::Filter::IRCv3 1.001001
-=pkg POE::Filter::Ident 1.16
 =pkg POE::Filter::JSON 0.04
 =pkg POE::Filter::JSON::Incr 0.03
 =pkg POE::Filter::KennySpeak 1.02
@@ -310,9 +310,9 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Filter::SimpleHTTP 0.091710
 =pkg POE::Filter::Slim::CLI 0.02
 =pkg POE::Filter::Snort 0.031
+=pkg POE::Filter::Spread 0.01
 =pkg POE::Filter::SpreadClient 1.002
 =pkg POE::Filter::Stomp 0.04
-=pkg POE::Filter::Syslog 1.20
 =pkg POE::Filter::Transparent::SMTP 0.2
 =pkg POE::Filter::XML 1.140700
 =pkg POE::Filter::XML::RPC 0.04
@@ -344,7 +344,7 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Session::AttributeBased 0.10
 =pkg POE::Session::GladeXML2 0.40
 =pkg POE::Session::Irssi 0.50
-=pkg POE::Session::Message 0.111
+=pkg POE::Session::MessageBased 0.111
 =pkg POE::Session::MultiDispatch 1.3
 =pkg POE::Session::Multiplex 0.0600
 =pkg POE::Session::PlainCall 0.0301
@@ -385,6 +385,7 @@ This task contains all distributions under the L<POE> namespace.
 =pkg POE::Framework::MIDI 0.09
 =pkg POE::Future 0.03
 =pkg POE::NFA 1.365
+=pkg POE::Net::SNMP 1.1006
 =pkg POE::Quickie 0.18
 =pkg POE::Stage 0.060
 =pkg POE::Sugar::Args 1.3
