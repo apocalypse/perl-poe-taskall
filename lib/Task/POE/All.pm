@@ -7,7 +7,7 @@ package Task::POE::All;
 
 =head1 SYNOPSIS
 
-	perl -MCPANPLUS -e 'install Task::POE::All'
+	# apoc@box:~$ cpanp install Task::POE::All
 
 =head1 DESCRIPTION
 
