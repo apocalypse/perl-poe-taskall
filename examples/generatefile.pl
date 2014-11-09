@@ -68,7 +68,7 @@ package Task::POE::All;
 
 =head1 SYNOPSIS
 
-	die 'Not meant to be used directly';
+	perl -MCPANPLUS -e 'install Task::POE::All'
 
 =head1 DESCRIPTION
 
