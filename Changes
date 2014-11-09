@@ -1,6 +1,7 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
+ Fixed the POD as I mangled the format, arg!
 
 1.100 2014-11-09T08:28:58Z UTC
  - Converted to Dist::Zilla for the release process!
