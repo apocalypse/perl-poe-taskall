@@ -32,24 +32,14 @@ my @mods = $cb->search( 'type' => 'module', 'allow' => [ qr/^POEx?::/ ] );
 
 # collate the data
 my %seen;
-foreach my $m ( @mods ) {
-	# is the module name == package name?
-	my $pkg = $m->package_name; $pkg =~ s/-/::/g;
-	if ( $m->name eq $pkg ) {
-		$seen{ $m->package_name } = $m;
-		next;
-	}
-
+foreach my $m ( sort @mods ) {
 	if ( exists $seen{ $m->package_name } ) {
-		# is this module "shorter" in length?
-		if ( length( $seen{ $m->package_name }->module ) > length( $m->module ) ) {
-			# do a sane version compare so we actually are able to list it as prereq!
-			if ( $cb->_vcmp( $m->version, 0 ) ) {
-				$seen{ $m->package_name } = $m;
-			}
+		# is the module name == package name?
+		my $pkg = $m->package_name; $pkg =~ s/-/::/g;
+		if ( $m->name eq $pkg ) {
+			$seen{ $m->package_name } = $m;
 		}
 	} else {
-		# first hit!
 		$seen{ $m->package_name } = $m;
 	}
 }
