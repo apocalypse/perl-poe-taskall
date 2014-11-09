@@ -1,13 +1,11 @@
-# copied from RJBS, thanks! :)
-exit 0 if $ENV{AUTOMATED_TESTING};
-
-# Build.PL
+#!/usr/bin/perl
 use strict; use warnings;
-use Module::Build;
 
-# CPANPLUS stuff we need
+my $FILENAME = '../lib/Task/POE/All.pm';
+
 use CPANPLUS::Backend;
 use CPANPLUS::Configure;
+use IO::All;
 
 # silence CPANPLUS!
 {
@@ -31,7 +29,6 @@ if ( $conf->get_conf( 'source_engine' ) =~ /CPANIDX/ ) {
 # search for matching modules/packages
 my $cb = CPANPLUS::Backend->new( $conf );
 my @mods = $cb->search( 'type' => 'module', 'allow' => [ qr/^POEx?::/ ] );
-warn "Found " . scalar @mods . " dists";
 
 # collate the data
 my %seen;
@@ -66,34 +63,49 @@ foreach my $m ( @mods ) {
 # invert the sense of the hash to prepare for prereq
 %seen = map { $_->module => $_->version } values %seen;
 
-# we need a recent perl
-$seen{'perl'} = '5.006';
+# Now, dump it!
+my $string = <<'EOF';
+package Task::POE::All;
 
-my $build = Module::Build->new(
-	# look up Module::Build::API for the info!
-	'dynamic_config'	=> 0,
-	'module_name'		=> 'Task::POE::All',
-	'license'		=> 'perl',
+# ABSTRACT: All of POE on CPAN and POEx too!
 
-	'dist_abstract'		=> 'Installs all of the modules in the POE::* namespace',
-	'dist_author'		=> 'Apocalypse <APOCAL@cpan.org>',
+1;
+=pod
+=head1 SYNOPSIS
 
-	'create_packlist'	=> 1,
-	'create_makefile_pl'	=> 'traditional',
-	'create_readme'		=> 1,
-	'create_license'	=> 1,
-	'sign'			=> 0,
+	die 'Not meant to be used directly';
 
-	'test_files'		=> 't/*.t',
+=head1 DESCRIPTION
 
-	# To actually build!
-	'configure_requires'	=> {
-		'CPANPLUS'	=> '0.90',
-	},
+This task contains all distributions under the L<POE> namespace.
+EOF
 
-	# All of POE's deps, ahahaha
-	'requires'		=> \%seen,
-);
+$string .= pkgroup( 'Servers', qr/^POE::Component::Server::/ );
+$string .= pkgroup( 'Clients', qr/^POE::Component::Client::/ );
+$string .= pkgroup( 'Generic Components', qr/^POE::Component::/ );
+$string .= pkgroup( 'Data Parsers and Wheels', qr/^POE::(?:Filter|Wheel)::/ );
+$string .= pkgroup( 'Event Loops', qr/^POE::Loop::/ );
+$string .= pkgroup( 'Session Types', qr/^POE::Session::/ );
+$string .= pkgroup( 'Debugging and Developing POE', qr/^POE::(?:API|Devel|Test|XS)::/ );
+$string .= pkgroup( 'POE Extensions', qr/^POEx::/ );
+$string .= pkgroup( 'Uncategorized', qr/.+/ );
 
-# all done!
-$build->create_build_script;
+$string .= "\n=cut\n";
+
+# Write it out!
+#io( $FILENAME ) < $string;
+print $string;
+
+exit;
+
+sub pkgroup {
+	my( $header, $re ) = @_;
+
+	my $str = "\n=pkgroup $header\n";
+	foreach my $s ( grep { $_ =~ $re } sort keys %seen ) {
+		$str .= "=pkg $s $seen{$s}\n";
+		delete $seen{$s}; # so our final catch-all will work!
+	}
+
+	return $str;
+}
