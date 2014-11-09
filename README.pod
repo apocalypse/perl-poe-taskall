@@ -8,7 +8,7 @@ Task::POE::All - All of POE on CPAN
 
 =head1 VERSION
 
-version 1.100
+version 1.101
 
 =head1 SYNOPSIS
 
@@ -21,385 +21,748 @@ This task contains all distributions under the L<POE> namespace.
 =head1 TASK CONTENTS
 
 =head2 Servers
-=pkg POE::Component::Server::Bayeux 0.04
-=pkg POE::Component::Server::BigBrother 0.08
-=pkg POE::Component::Server::Chargen 1.14
-=pkg POE::Component::Server::DNS 0.30
-=pkg POE::Component::Server::Daytime 1.14
-=pkg POE::Component::Server::Discard 1.14
-=pkg POE::Component::Server::Echo 1.64
-=pkg POE::Component::Server::FTP 0.08
-=pkg POE::Component::Server::HTTP 0.09
-=pkg POE::Component::Server::HTTP::KeepAlive 0.0307
-=pkg POE::Component::Server::HTTPServer 0.009002
-=pkg POE::Component::Server::IRC 1.54
-=pkg POE::Component::Server::Ident 1.16
-=pkg POE::Component::Server::Inet 0.06
-=pkg POE::Component::Server::JSONRPC 0.05
-=pkg POE::Component::Server::MySQL 0.02
-=pkg POE::Component::Server::NNTP 1.04
-=pkg POE::Component::Server::NRPE 0.18
-=pkg POE::Component::Server::NSCA 0.08
-=pkg POE::Component::Server::POP3 0.10
-=pkg POE::Component::Server::PSGI 0.6
-=pkg POE::Component::Server::Postfix 0.001
-=pkg POE::Component::Server::PreforkTCP 0.11
-=pkg POE::Component::Server::Qotd 1.14
-=pkg POE::Component::Server::RADIUS 1.08
-=pkg POE::Component::Server::SOAP 1.14
-=pkg POE::Component::Server::SimpleContent 1.14
-=pkg POE::Component::Server::SimpleHTTP 2.18
-=pkg POE::Component::Server::SimpleHTTP::PreFork 2.10
-=pkg POE::Component::Server::SimpleSMTP 1.50
-=pkg POE::Component::Server::SimpleXMLRPC 0.02
-=pkg POE::Component::Server::Syslog 1.20
-=pkg POE::Component::Server::TacacsPlus 1.11
-=pkg POE::Component::Server::Time 1.14
-=pkg POE::Component::Server::Twirc 0.17
-=pkg POE::Component::Server::XMLRPC 0.05
-=pkg POE::Component::Server::eris 1.8
+
+=head3 L<POE::Component::Server::Bayeux> 0.04
+
+=head3 L<POE::Component::Server::BigBrother> 0.08
+
+=head3 L<POE::Component::Server::Chargen> 1.14
+
+=head3 L<POE::Component::Server::DNS> 0.30
+
+=head3 L<POE::Component::Server::Daytime> 1.14
+
+=head3 L<POE::Component::Server::Discard> 1.14
+
+=head3 L<POE::Component::Server::Echo> 1.64
+
+=head3 L<POE::Component::Server::FTP> 0.08
+
+=head3 L<POE::Component::Server::HTTP> 0.09
+
+=head3 L<POE::Component::Server::HTTP::KeepAlive> 0.0307
+
+=head3 L<POE::Component::Server::HTTPServer> 0.009002
+
+=head3 L<POE::Component::Server::IRC> 1.54
+
+=head3 L<POE::Component::Server::Ident> 1.16
+
+=head3 L<POE::Component::Server::Inet> 0.06
+
+=head3 L<POE::Component::Server::JSONRPC> 0.05
+
+=head3 L<POE::Component::Server::MySQL> 0.02
+
+=head3 L<POE::Component::Server::NNTP> 1.04
+
+=head3 L<POE::Component::Server::NRPE> 0.18
+
+=head3 L<POE::Component::Server::NSCA> 0.08
+
+=head3 L<POE::Component::Server::POP3> 0.10
+
+=head3 L<POE::Component::Server::PSGI> 0.6
+
+=head3 L<POE::Component::Server::Postfix> 0.001
+
+=head3 L<POE::Component::Server::PreforkTCP> 0.11
+
+=head3 L<POE::Component::Server::Qotd> 1.14
+
+=head3 L<POE::Component::Server::RADIUS> 1.08
+
+=head3 L<POE::Component::Server::SOAP> 1.14
+
+=head3 L<POE::Component::Server::SimpleContent> 1.14
+
+=head3 L<POE::Component::Server::SimpleHTTP> 2.18
+
+=head3 L<POE::Component::Server::SimpleHTTP::PreFork> 2.10
+
+=head3 L<POE::Component::Server::SimpleSMTP> 1.50
+
+=head3 L<POE::Component::Server::SimpleXMLRPC> 0.02
+
+=head3 L<POE::Component::Server::Syslog> 1.20
+
+=head3 L<POE::Component::Server::TacacsPlus> 1.11
+
+=head3 L<POE::Component::Server::Time> 1.14
+
+=head3 L<POE::Component::Server::Twirc> 0.17
+
+=head3 L<POE::Component::Server::XMLRPC> 0.05
+
+=head3 L<POE::Component::Server::eris> 1.8
 
 =head2 Clients
-=pkg POE::Component::Client::AMQP 0.03
-=pkg POE::Component::Client::AirTunes 0.01
-=pkg POE::Component::Client::BigBrother 1.00
-=pkg POE::Component::Client::CouchDB 0.05
-=pkg POE::Component::Client::DNS 1.053
-=pkg POE::Component::Client::DNS::Recursive 1.08
-=pkg POE::Component::Client::DNSBL 1.08
-=pkg POE::Component::Client::FTP 0.22
-=pkg POE::Component::Client::Feed 0.901
-=pkg POE::Component::Client::HTTPDeferred 0.02
-=pkg POE::Component::Client::Halo 0.2
-=pkg POE::Component::Client::Icecast 0.6
-=pkg POE::Component::Client::Ident 1.16
-=pkg POE::Component::Client::Keepalive 0.272
-=pkg POE::Component::Client::LDAP 0.04
-=pkg POE::Component::Client::Lingr 0.04
-=pkg POE::Component::Client::MPD 2.000
-=pkg POE::Component::Client::MSN 0.03
-=pkg POE::Component::Client::MogileFS 0.02
-=pkg POE::Component::Client::NNTP 2.22
-=pkg POE::Component::Client::NNTP::Tail 0.03
-=pkg POE::Component::Client::NRPE 0.20
-=pkg POE::Component::Client::NSCA 0.16
-=pkg POE::Component::Client::NTP 0.10
-=pkg POE::Component::Client::POP3 0.02
-=pkg POE::Component::Client::Pastebot 1.16
-=pkg POE::Component::Client::Ping 1.174
-=pkg POE::Component::Client::RADIUS 1.04
-=pkg POE::Component::Client::Rcon 0.23
-=pkg POE::Component::Client::SMTP 0.22
-=pkg POE::Component::Client::SOAP 0.01
-=pkg POE::Component::Client::SOCKS 1.00
-=pkg POE::Component::Client::SimpleFTP 0.003
-=pkg POE::Component::Client::Stomp 0.12
-=pkg POE::Component::Client::Stomp::Utils 0.02
-=pkg POE::Component::Client::TCPMulti 0.0524
-=pkg POE::Component::Client::Telnet 0.06
-=pkg POE::Component::Client::Traceroute 0.21
-=pkg POE::Component::Client::Twitter 0.01
-=pkg POE::Component::Client::UserAgent 0.08
-=pkg POE::Component::Client::Whois 1.30
-=pkg POE::Component::Client::Whois::Smart 0.187
-=pkg POE::Component::Client::eris 1.4
-=pkg POE::Component::Client::opentick 0.21
+
+=head3 L<POE::Component::Client::AMQP> 0.03
+
+=head3 L<POE::Component::Client::AirTunes> 0.01
+
+=head3 L<POE::Component::Client::BigBrother> 1.00
+
+=head3 L<POE::Component::Client::CouchDB> 0.05
+
+=head3 L<POE::Component::Client::DNS> 1.053
+
+=head3 L<POE::Component::Client::DNS::Recursive> 1.08
+
+=head3 L<POE::Component::Client::DNSBL> 1.08
+
+=head3 L<POE::Component::Client::FTP> 0.22
+
+=head3 L<POE::Component::Client::Feed> 0.901
+
+=head3 L<POE::Component::Client::HTTP> 0.949
+
+=head3 L<POE::Component::Client::HTTPDeferred> 0.02
+
+=head3 L<POE::Component::Client::Halo> 0.2
+
+=head3 L<POE::Component::Client::Icecast> 0.6
+
+=head3 L<POE::Component::Client::Keepalive> 0.272
+
+=head3 L<POE::Component::Client::LDAP> 0.04
+
+=head3 L<POE::Component::Client::Lingr> 0.04
+
+=head3 L<POE::Component::Client::MPD> 2.000
+
+=head3 L<POE::Component::Client::MSN> 0.03
+
+=head3 L<POE::Component::Client::MogileFS> 0.02
+
+=head3 L<POE::Component::Client::NNTP> 2.22
+
+=head3 L<POE::Component::Client::NNTP::Tail> 0.03
+
+=head3 L<POE::Component::Client::NRPE> 0.20
+
+=head3 L<POE::Component::Client::NSCA> 0.16
+
+=head3 L<POE::Component::Client::NTP> 0.10
+
+=head3 L<POE::Component::Client::POP3> 0.02
+
+=head3 L<POE::Component::Client::Pastebot> 1.16
+
+=head3 L<POE::Component::Client::Ping> 1.174
+
+=head3 L<POE::Component::Client::RADIUS> 1.04
+
+=head3 L<POE::Component::Client::Rcon> 0.23
+
+=head3 L<POE::Component::Client::SMTP> 0.22
+
+=head3 L<POE::Component::Client::SOAP> 0.01
+
+=head3 L<POE::Component::Client::SOCKS> 1.00
+
+=head3 L<POE::Component::Client::SimpleFTP> 0.003
+
+=head3 L<POE::Component::Client::Stomp> 0.12
+
+=head3 L<POE::Component::Client::Stomp::Utils> 0.02
+
+=head3 L<POE::Component::Client::TCPMulti> 0.0524
+
+=head3 L<POE::Component::Client::Telnet> 0.06
+
+=head3 L<POE::Component::Client::Traceroute> 0.21
+
+=head3 L<POE::Component::Client::Twitter> 0.01
+
+=head3 L<POE::Component::Client::UserAgent> 0.08
+
+=head3 L<POE::Component::Client::Whois> 1.30
+
+=head3 L<POE::Component::Client::Whois::Smart> 0.187
+
+=head3 L<POE::Component::Client::eris> 1.4
+
+=head3 L<POE::Component::Client::opentick> 0.21
 
 =head2 Generic Components
-=pkg POE::Component::AI::MegaHAL 1.18
-=pkg POE::Component::AIO 1.00
-=pkg POE::Component::Algorithm::Evolutionary 0.002001
-=pkg POE::Component::Amazon::S3 0.01
-=pkg POE::Component::Archive::Any 0.002
-=pkg POE::Component::AssaultCube::ServerQuery 0.04
-=pkg POE::Component::AtomAggregator 1.0
-=pkg POE::Component::Basement 0.01
-=pkg POE::Component::BlogCloud 0.01
-=pkg POE::Component::Bundle::WebDevelopment 1.001004
-=pkg POE::Component::CD::Detect 1.1
-=pkg POE::Component::CD::Rip 1.2
-=pkg POE::Component::CPAN::Mirror::Multiplexer 0.04
-=pkg POE::Component::CPAN::Reporter 0.06
-=pkg POE::Component::CPAN::SQLite::Info 0.11
-=pkg POE::Component::CPAN::YACSmoke 1.36
-=pkg POE::Component::CPANIDX 0.10
-=pkg POE::Component::CPANPLUS::YACSmoke 1.62
-=pkg POE::Component::Cache 0.001001
-=pkg POE::Component::Captcha::reCAPTCHA 0.02
-=pkg POE::Component::Child 1.39
-=pkg POE::Component::ControlPort 1.0266
-=pkg POE::Component::Cron 0.021
-=pkg POE::Component::Curl::Multi 0.10
-=pkg POE::Component::Curses 0.211
-=pkg POE::Component::DBIAgent 0.26
-=pkg POE::Component::DHCP::Monitor 1.04
-=pkg POE::Component::Daemon 0.1400
-=pkg POE::Component::Daemon::Win32 0.01
-=pkg POE::Component::DebugShell 1.412
-=pkg POE::Component::DebugShell::Jabber 0.04
-=pkg POE::Component::DirWatch 0.300001
-=pkg POE::Component::DirWatch::Object 0.10
-=pkg POE::Component::EasyDBI 1.24
-=pkg POE::Component::Enc::Flac 1.01
-=pkg POE::Component::Enc::Mp3 1.2
-=pkg POE::Component::Enc::Ogg 1.05
-=pkg POE::Component::FeedAggregator 0.902
-=pkg POE::Component::Fuse 0.05
-=pkg POE::Component::Gearman::Client 0.03
-=pkg POE::Component::Generic 0.1403
-=pkg POE::Component::Github 0.08
-=pkg POE::Component::Growl 1.00
-=pkg POE::Component::Hailo 0.10
-=pkg POE::Component::ICal 0.130020
-=pkg POE::Component::IKC 0.2402
-=pkg POE::Component::IRC 6.88
-=pkg POE::Component::IRC::Object 0.02
-=pkg POE::Component::IRC::Plugin::BaseWrap 1.001001
-=pkg POE::Component::IRC::Plugin::Blowfish 0.01
-=pkg POE::Component::IRC::Plugin::Bollocks 1.00
-=pkg POE::Component::IRC::Plugin::CPAN::Info 1.001002
-=pkg POE::Component::IRC::Plugin::ColorNamer 2.001003
-=pkg POE::Component::IRC::Plugin::CoreList 1.02
-=pkg POE::Component::IRC::Plugin::Donuts 0.07
-=pkg POE::Component::IRC::Plugin::Eval 0.07
-=pkg POE::Component::IRC::Plugin::FTP::EasyUpload 0.002
-=pkg POE::Component::IRC::Plugin::Google::Calculator 0.04
-=pkg POE::Component::IRC::Plugin::Hailo 0.18
-=pkg POE::Component::IRC::Plugin::Hello 0.001002
-=pkg POE::Component::IRC::Plugin::IRCDHelp 0.01
-=pkg POE::Component::IRC::Plugin::ImageMirror 0.15
-=pkg POE::Component::IRC::Plugin::Infobot 0.001002
-=pkg POE::Component::IRC::Plugin::Karma 0.003
-=pkg POE::Component::IRC::Plugin::Logger::Irssi 0.001002
-=pkg POE::Component::IRC::Plugin::MegaHAL 0.46
-=pkg POE::Component::IRC::Plugin::MultiProxy 0.01
-=pkg POE::Component::IRC::Plugin::OutputToPastebin 0.002
-=pkg POE::Component::IRC::Plugin::POE::Knee 1.08
-=pkg POE::Component::IRC::Plugin::QueryDNS 1.04
-=pkg POE::Component::IRC::Plugin::QueryDNSBL 1.04
-=pkg POE::Component::IRC::Plugin::RSS::Headlines 1.08
-=pkg POE::Component::IRC::Plugin::RTorrentStatus 0.17
-=pkg POE::Component::IRC::Plugin::Role 0.06
-=pkg POE::Component::IRC::Plugin::Seen 0.001001
-=pkg POE::Component::IRC::Plugin::Thanks 1.001001
-=pkg POE::Component::IRC::Plugin::Trac::RSS 0.11
-=pkg POE::Component::IRC::Plugin::URI::Find 1.10
-=pkg POE::Component::IRC::Plugin::Unicode::UCD 0.004
-=pkg POE::Component::IRC::Plugin::WWW::CPANRatings::RSS 0.0106
-=pkg POE::Component::IRC::Plugin::WWW::Google::Time 0.0102
-=pkg POE::Component::IRC::Plugin::WWW::KrispyKreme::HotLight 0.06
-=pkg POE::Component::IRC::Plugin::WWW::OhNoRobotCom::Search 0.002
-=pkg POE::Component::IRC::Plugin::WWW::Reddit::TIL 0.07
-=pkg POE::Component::IRC::Plugin::WWW::Vim::Tips 0.14
-=pkg POE::Component::IRC::Plugin::WWW::Weather::US 0.04
-=pkg POE::Component::IRC::Plugin::WWW::XKCD::AsText 0.003
-=pkg POE::Component::IRC::Plugin::WubWubWub 0.1
-=pkg POE::Component::Jabber 3.00
-=pkg POE::Component::JobQueue 0.571
-=pkg POE::Component::LaDBI 1.002001
-=pkg POE::Component::Lightspeed 0.05
-=pkg POE::Component::Lingua::Translate 0.06
-=pkg POE::Component::Log4perl 0.03
-=pkg POE::Component::Logger 1.10
-=pkg POE::Component::MXML 0.03
-=pkg POE::Component::MessageQueue 0.3001
-=pkg POE::Component::Metabase::Client::Submit 0.12
-=pkg POE::Component::Metabase::Relay::Server 0.34
-=pkg POE::Component::Net::FTP 0.001
-=pkg POE::Component::Net::LastFM::Submission 0.24
-=pkg POE::Component::NetSNMP::agent 0.500
-=pkg POE::Component::NomadJukebox 0.02
-=pkg POE::Component::NonBlockingWrapper::Base 0.002
-=pkg POE::Component::OSCAR 0.05
-=pkg POE::Component::Omegle 0.02
-=pkg POE::Component::OpenSSH 0.10
-=pkg POE::Component::Pastebin::Create 0.0
-=pkg POE::Component::Pcap 0.04
-=pkg POE::Component::Player::Mpg123 1.2
-=pkg POE::Component::Player::Musicus 1.32
-=pkg POE::Component::Player::Slideshow 1.4
-=pkg POE::Component::Player::Xmms 0.04
-=pkg POE::Component::Pluggable 1.26
-=pkg POE::Component::PluginManager 0.67
-=pkg POE::Component::Pool::DBI 0.014
-=pkg POE::Component::Pool::Thread 0.015
-=pkg POE::Component::PreforkDispatch 0.101
-=pkg POE::Component::ProcTerminator 0.03
-=pkg POE::Component::Proxy::MySQL 0.04
-=pkg POE::Component::Proxy::SOCKS 1.02
-=pkg POE::Component::Proxy::TCP 1.2
-=pkg POE::Component::RSS 3.01
-=pkg POE::Component::RSSAggregator 1.11
-=pkg POE::Component::RemoteTail 0.01011
-=pkg POE::Component::Rendezvous::Publish 0.01
-=pkg POE::Component::Resolver 0.921
-=pkg POE::Component::ResourcePool 0.04
-=pkg POE::Component::ResourcePool::Resource::TokenBucket 0.01
-=pkg POE::Component::SASLAuthd 0.03
-=pkg POE::Component::SNMP::Session 0.1202
-=pkg POE::Component::SSLify 1.008
-=pkg POE::Component::SSLify::NonBlock 0.41
-=pkg POE::Component::Schedule 0.95
-=pkg POE::Component::Sequence 0.02
-=pkg POE::Component::SimpleDBI 1.30
-=pkg POE::Component::SimpleLog 1.05
-=pkg POE::Component::SmokeBox 0.48
-=pkg POE::Component::SmokeBox::Backend::Test::SmokeBox::Mini 0.58
-=pkg POE::Component::SmokeBox::Dists 1.08
-=pkg POE::Component::SmokeBox::Recent 1.46
-=pkg POE::Component::SmokeBox::Uploads::CPAN::Mini 1.00
-=pkg POE::Component::SmokeBox::Uploads::NNTP 1.00
-=pkg POE::Component::SmokeBox::Uploads::RSS 1.00
-=pkg POE::Component::SmokeBox::Uploads::Rsync 1.000
-=pkg POE::Component::SubWrapper 2.01
-=pkg POE::Component::Supervisor 0.08
-=pkg POE::Component::Syndicator 0.06
-=pkg POE::Component::TFTPd 0.0302
-=pkg POE::Component::TSTP 0.02
-=pkg POE::Component::Telephony::CTPort 0.03
-=pkg POE::Component::UserBase 0.09
-=pkg POE::Component::WWW::CPANRatings::RSS 0.0101
-=pkg POE::Component::WWW::DoingItWrongCom::RandImage 0.03
-=pkg POE::Component::WWW::Google::Calculator 0.03
-=pkg POE::Component::WWW::Google::Time 0.0102
-=pkg POE::Component::WWW::OhNoRobotCom::Search 0.002
-=pkg POE::Component::WWW::Pastebin::Bot::Pastebot::Create 0.003
-=pkg POE::Component::WWW::Pastebin::Many::Retrieve 0.001
-=pkg POE::Component::WWW::Shorten 1.20
-=pkg POE::Component::WWW::XKCD::AsText 0.002
-=pkg POE::Component::WakeOnLAN 1.04
-=pkg POE::Component::Win32::ChangeNotify 1.22
-=pkg POE::Component::Win32::EventLog 1.24
-=pkg POE::Component::Win32::Service 1.24
-=pkg POE::Component::XUL 0.02
-=pkg POE::Component::YahooMessenger 0.05
-=pkg POE::Component::YubiAuth 0.07
+
+=head3 L<POE::Component::AI::MegaHAL> 1.18
+
+=head3 L<POE::Component::AIO> 1.00
+
+=head3 L<POE::Component::Algorithm::Evolutionary> 0.002001
+
+=head3 L<POE::Component::Amazon::S3> 0.01
+
+=head3 L<POE::Component::Archive::Any> 0.002
+
+=head3 L<POE::Component::AssaultCube::ServerQuery> 0.04
+
+=head3 L<POE::Component::AtomAggregator> 1.0
+
+=head3 L<POE::Component::Basement> 0.01
+
+=head3 L<POE::Component::BlogCloud> 0.01
+
+=head3 L<POE::Component::CD::Detect> 1.1
+
+=head3 L<POE::Component::CD::Rip> 1.2
+
+=head3 L<POE::Component::CPAN::Mirror::Multiplexer> 0.04
+
+=head3 L<POE::Component::CPAN::Reporter> 0.06
+
+=head3 L<POE::Component::CPAN::SQLite::Info> 0.11
+
+=head3 L<POE::Component::CPAN::YACSmoke> 1.36
+
+=head3 L<POE::Component::CPANIDX> 0.10
+
+=head3 L<POE::Component::CPANPLUS::YACSmoke> 1.62
+
+=head3 L<POE::Component::Cache> 0.001001
+
+=head3 L<POE::Component::Captcha::reCAPTCHA> 0.02
+
+=head3 L<POE::Component::Child> 1.39
+
+=head3 L<POE::Component::ControlPort> 1.0266
+
+=head3 L<POE::Component::Cron> 0.021
+
+=head3 L<POE::Component::Curl::Multi> 0.10
+
+=head3 L<POE::Component::Curses> 0.211
+
+=head3 L<POE::Component::DBIAgent> 0.26
+
+=head3 L<POE::Component::DHCP::Monitor> 1.04
+
+=head3 L<POE::Component::Daemon> 0.1400
+
+=head3 L<POE::Component::Daemon::Win32> 0.01
+
+=head3 L<POE::Component::DebugShell> 1.412
+
+=head3 L<POE::Component::DebugShell::Jabber> 0.04
+
+=head3 L<POE::Component::DirWatch> 0.300001
+
+=head3 L<POE::Component::DirWatch::Object> 0.10
+
+=head3 L<POE::Component::EasyDBI> 1.24
+
+=head3 L<POE::Component::Enc::Flac> 1.01
+
+=head3 L<POE::Component::Enc::Mp3> 1.2
+
+=head3 L<POE::Component::Enc::Ogg> 1.05
+
+=head3 L<POE::Component::FastCGI> 0.19
+
+=head3 L<POE::Component::FeedAggregator> 0.902
+
+=head3 L<POE::Component::Fuse> 0.05
+
+=head3 L<POE::Component::Gearman::Client> 0.03
+
+=head3 L<POE::Component::Generic> 0.1403
+
+=head3 L<POE::Component::Github> 0.08
+
+=head3 L<POE::Component::Growl> 1.00
+
+=head3 L<POE::Component::Hailo> 0.10
+
+=head3 L<POE::Component::ICal> 0.130020
+
+=head3 L<POE::Component::IKC> 0.2402
+
+=head3 L<POE::Component::IRC::Object> 0.02
+
+=head3 L<POE::Component::IRC::Plugin::BaseWrap> 1.001001
+
+=head3 L<POE::Component::IRC::Plugin::Blowfish> 0.01
+
+=head3 L<POE::Component::IRC::Plugin::Bollocks> 1.00
+
+=head3 L<POE::Component::IRC::Plugin::CPAN::Info> 1.001002
+
+=head3 L<POE::Component::IRC::Plugin::ColorNamer> 2.001003
+
+=head3 L<POE::Component::IRC::Plugin::CoreList> 1.02
+
+=head3 L<POE::Component::IRC::Plugin::Donuts> 0.07
+
+=head3 L<POE::Component::IRC::Plugin::Eval> 0.07
+
+=head3 L<POE::Component::IRC::Plugin::FTP::EasyUpload> 0.002
+
+=head3 L<POE::Component::IRC::Plugin::Google::Calculator> 0.04
+
+=head3 L<POE::Component::IRC::Plugin::Hailo> 0.18
+
+=head3 L<POE::Component::IRC::Plugin::Hello> 0.001002
+
+=head3 L<POE::Component::IRC::Plugin::IRCDHelp> 0.01
+
+=head3 L<POE::Component::IRC::Plugin::ImageMirror> 0.15
+
+=head3 L<POE::Component::IRC::Plugin::Infobot> 0.001002
+
+=head3 L<POE::Component::IRC::Plugin::Karma> 0.003
+
+=head3 L<POE::Component::IRC::Plugin::Logger::Irssi> 0.001002
+
+=head3 L<POE::Component::IRC::Plugin::MegaHAL> 0.46
+
+=head3 L<POE::Component::IRC::Plugin::MultiProxy> 0.01
+
+=head3 L<POE::Component::IRC::Plugin::OutputToPastebin> 0.002
+
+=head3 L<POE::Component::IRC::Plugin::POE::Knee> 1.08
+
+=head3 L<POE::Component::IRC::Plugin::QueryDNS> 1.04
+
+=head3 L<POE::Component::IRC::Plugin::QueryDNSBL> 1.04
+
+=head3 L<POE::Component::IRC::Plugin::RSS::Headlines> 1.08
+
+=head3 L<POE::Component::IRC::Plugin::RTorrentStatus> 0.17
+
+=head3 L<POE::Component::IRC::Plugin::Role> 0.06
+
+=head3 L<POE::Component::IRC::Plugin::Seen> 0.001001
+
+=head3 L<POE::Component::IRC::Plugin::Thanks> 1.001001
+
+=head3 L<POE::Component::IRC::Plugin::Trac::RSS> 0.11
+
+=head3 L<POE::Component::IRC::Plugin::URI::Find> 1.10
+
+=head3 L<POE::Component::IRC::Plugin::Unicode::UCD> 0.004
+
+=head3 L<POE::Component::IRC::Plugin::WWW::CPANRatings::RSS> 0.0106
+
+=head3 L<POE::Component::IRC::Plugin::WWW::Google::Time> 0.0102
+
+=head3 L<POE::Component::IRC::Plugin::WWW::KrispyKreme::HotLight> 0.06
+
+=head3 L<POE::Component::IRC::Plugin::WWW::OhNoRobotCom::Search> 0.002
+
+=head3 L<POE::Component::IRC::Plugin::WWW::Reddit::TIL> 0.07
+
+=head3 L<POE::Component::IRC::Plugin::WWW::Vim::Tips> 0.14
+
+=head3 L<POE::Component::IRC::Plugin::WWW::Weather::US> 0.04
+
+=head3 L<POE::Component::IRC::Plugin::WWW::XKCD::AsText> 0.003
+
+=head3 L<POE::Component::IRC::Plugin::WubWubWub> 0.1
+
+=head3 L<POE::Component::Jabber> 3.00
+
+=head3 L<POE::Component::JobQueue> 0.571
+
+=head3 L<POE::Component::LaDBI> 1.002001
+
+=head3 L<POE::Component::Lightspeed> 0.05
+
+=head3 L<POE::Component::Lingua::Translate> 0.06
+
+=head3 L<POE::Component::Log4perl> 0.03
+
+=head3 L<POE::Component::Logger> 1.10
+
+=head3 L<POE::Component::MXML> 0.03
+
+=head3 L<POE::Component::MessageQueue> 0.3001
+
+=head3 L<POE::Component::Metabase::Client::Submit> 0.12
+
+=head3 L<POE::Component::Metabase::Relay::Server> 0.34
+
+=head3 L<POE::Component::Net::FTP> 0.001
+
+=head3 L<POE::Component::Net::LastFM::Submission> 0.24
+
+=head3 L<POE::Component::NetSNMP::agent> 0.500
+
+=head3 L<POE::Component::NomadJukebox> 0.02
+
+=head3 L<POE::Component::NonBlockingWrapper::Base> 0.002
+
+=head3 L<POE::Component::OSCAR> 0.05
+
+=head3 L<POE::Component::Omegle> 0.02
+
+=head3 L<POE::Component::OpenSSH> 0.10
+
+=head3 L<POE::Component::Pastebin::Create> 0.0
+
+=head3 L<POE::Component::Pcap> 0.04
+
+=head3 L<POE::Component::Player::Mpg123> 1.2
+
+=head3 L<POE::Component::Player::Musicus> 1.32
+
+=head3 L<POE::Component::Player::Slideshow> 1.4
+
+=head3 L<POE::Component::Player::Xmms> 0.04
+
+=head3 L<POE::Component::Pluggable> 1.26
+
+=head3 L<POE::Component::PluginManager> 0.67
+
+=head3 L<POE::Component::Pool::DBI> 0.014
+
+=head3 L<POE::Component::Pool::Thread> 0.015
+
+=head3 L<POE::Component::PreforkDispatch> 0.101
+
+=head3 L<POE::Component::ProcTerminator> 0.03
+
+=head3 L<POE::Component::Proxy::MySQL> 0.04
+
+=head3 L<POE::Component::Proxy::SOCKS> 1.02
+
+=head3 L<POE::Component::Proxy::TCP> 1.2
+
+=head3 L<POE::Component::RSS> 3.01
+
+=head3 L<POE::Component::RSSAggregator> 1.11
+
+=head3 L<POE::Component::RemoteTail> 0.01011
+
+=head3 L<POE::Component::Rendezvous::Publish> 0.01
+
+=head3 L<POE::Component::Resolver> 0.921
+
+=head3 L<POE::Component::ResourcePool> 0.04
+
+=head3 L<POE::Component::ResourcePool::Resource::TokenBucket> 0.01
+
+=head3 L<POE::Component::SASLAuthd> 0.03
+
+=head3 L<POE::Component::SNMP> 1.1006
+
+=head3 L<POE::Component::SNMP::Session> 0.1202
+
+=head3 L<POE::Component::SSLify> 1.008
+
+=head3 L<POE::Component::SSLify::NonBlock> 0.41
+
+=head3 L<POE::Component::Schedule> 0.95
+
+=head3 L<POE::Component::Sequence> 0.02
+
+=head3 L<POE::Component::SimpleDBI> 1.30
+
+=head3 L<POE::Component::SimpleLog> 1.05
+
+=head3 L<POE::Component::SmokeBox> 0.48
+
+=head3 L<POE::Component::SmokeBox::Backend::Test::SmokeBox::Mini> 0.58
+
+=head3 L<POE::Component::SmokeBox::Dists> 1.08
+
+=head3 L<POE::Component::SmokeBox::Recent> 1.46
+
+=head3 L<POE::Component::SmokeBox::Uploads::CPAN::Mini> 1.00
+
+=head3 L<POE::Component::SmokeBox::Uploads::NNTP> 1.00
+
+=head3 L<POE::Component::SmokeBox::Uploads::RSS> 1.00
+
+=head3 L<POE::Component::SmokeBox::Uploads::Rsync> 1.000
+
+=head3 L<POE::Component::SpreadClient> 1.002
+
+=head3 L<POE::Component::SubWrapper> 2.01
+
+=head3 L<POE::Component::Supervisor> 0.08
+
+=head3 L<POE::Component::Syndicator> 0.06
+
+=head3 L<POE::Component::TFTPd> 0.0302
+
+=head3 L<POE::Component::TSTP> 0.02
+
+=head3 L<POE::Component::Telephony::CTPort> 0.03
+
+=head3 L<POE::Component::UserBase> 0.09
+
+=head3 L<POE::Component::WWW::CPANRatings::RSS> 0.0101
+
+=head3 L<POE::Component::WWW::DoingItWrongCom::RandImage> 0.03
+
+=head3 L<POE::Component::WWW::Google::Calculator> 0.03
+
+=head3 L<POE::Component::WWW::Google::Time> 0.0102
+
+=head3 L<POE::Component::WWW::Lipsum> 1.001004
+
+=head3 L<POE::Component::WWW::OhNoRobotCom::Search> 0.002
+
+=head3 L<POE::Component::WWW::Pastebin::Bot::Pastebot::Create> 0.003
+
+=head3 L<POE::Component::WWW::Pastebin::Many::Retrieve> 0.001
+
+=head3 L<POE::Component::WWW::Shorten> 1.20
+
+=head3 L<POE::Component::WWW::XKCD::AsText> 0.002
+
+=head3 L<POE::Component::WakeOnLAN> 1.04
+
+=head3 L<POE::Component::Win32::ChangeNotify> 1.22
+
+=head3 L<POE::Component::Win32::EventLog> 1.24
+
+=head3 L<POE::Component::Win32::Service> 1.24
+
+=head3 L<POE::Component::XUL> 0.02
+
+=head3 L<POE::Component::YahooMessenger> 0.05
+
+=head3 L<POE::Component::YubiAuth> 0.07
 
 =head2 Data Parsers and Wheels
-=pkg POE::Filter::Asterisk::Manager 0.08
-=pkg POE::Filter::BigBrother 0.13
-=pkg POE::Filter::Bzip2 1.58
-=pkg POE::Filter::CSV 1.16
-=pkg POE::Filter::CSV_XS 1.16
-=pkg POE::Filter::DHCPd::Lease 0.0703
-=pkg POE::Filter::DNS::TCP 0.06
-=pkg POE::Filter::ErrorProof 0.01
-=pkg POE::Filter::FSSocket 0.07
-=pkg POE::Filter::FastCGI 0.19
-=pkg POE::Filter::Finger 0.08
-=pkg POE::Filter::HTTP::Parser 1.06
-=pkg POE::Filter::HTTPD::Chunked 0.9
-=pkg POE::Filter::HTTPHead 0.949
-=pkg POE::Filter::Hessian 1.00
-=pkg POE::Filter::IASLog 1.08
-=pkg POE::Filter::IRC::Hybrid 0.996
-=pkg POE::Filter::IRCD 2.44
-=pkg POE::Filter::IRCv3 1.001001
-=pkg POE::Filter::JSON 0.04
-=pkg POE::Filter::JSON::Incr 0.03
-=pkg POE::Filter::KennySpeak 1.02
-=pkg POE::Filter::LOLCAT 1.10
-=pkg POE::Filter::LZF 1.70
-=pkg POE::Filter::LZO 1.70
-=pkg POE::Filter::LZW 1.72
-=pkg POE::Filter::LZW::Progressive 0.1
-=pkg POE::Filter::Log::IPTables 0.02
-=pkg POE::Filter::Log::Procmail 0.03
-=pkg POE::Filter::Ls 0.01
-=pkg POE::Filter::PPPHDLC 0.01
-=pkg POE::Filter::ParseWords 1.06
-=pkg POE::Filter::Postfix 0.003
-=pkg POE::Filter::RecDescent 0.02
-=pkg POE::Filter::Redis 0.02
-=pkg POE::Filter::Regexp 1.0
-=pkg POE::Filter::SMTP 1.2
-=pkg POE::Filter::SSL 0.28
-=pkg POE::Filter::SimpleHTTP 0.091710
-=pkg POE::Filter::Slim::CLI 0.02
-=pkg POE::Filter::Snort 0.031
-=pkg POE::Filter::Spread 0.01
-=pkg POE::Filter::SpreadClient 1.002
-=pkg POE::Filter::Stomp 0.04
-=pkg POE::Filter::Transparent::SMTP 0.2
-=pkg POE::Filter::XML 1.140700
-=pkg POE::Filter::XML::RPC 0.04
-=pkg POE::Filter::Zlib 2.02
-=pkg POE::Wheel::Audio::Mad 0.3
-=pkg POE::Wheel::GnuPG 0.01
-=pkg POE::Wheel::MyCurses 1.2102
-=pkg POE::Wheel::Null 0.01
-=pkg POE::Wheel::Run::Win32 0.18
-=pkg POE::Wheel::Sendfile 0.0200
-=pkg POE::Wheel::TermKey 0.02
-=pkg POE::Wheel::UDP 0.02
-=pkg POE::Wheel::VimColor 0.0
+
+=head3 L<POE::Filter::Asterisk::Manager> 0.08
+
+=head3 L<POE::Filter::BigBrother> 0.13
+
+=head3 L<POE::Filter::Bzip2> 1.58
+
+=head3 L<POE::Filter::CSV> 1.16
+
+=head3 L<POE::Filter::CSV_XS> 1.16
+
+=head3 L<POE::Filter::DHCPd::Lease> 0.0703
+
+=head3 L<POE::Filter::DNS::TCP> 0.06
+
+=head3 L<POE::Filter::ErrorProof> 0.01
+
+=head3 L<POE::Filter::FSSocket> 0.07
+
+=head3 L<POE::Filter::Finger> 0.08
+
+=head3 L<POE::Filter::HTTP::Parser> 1.06
+
+=head3 L<POE::Filter::HTTPD::Chunked> 0.9
+
+=head3 L<POE::Filter::Hessian> 1.00
+
+=head3 L<POE::Filter::IASLog> 1.08
+
+=head3 L<POE::Filter::IRC> 6.88
+
+=head3 L<POE::Filter::IRC::P10> 0.996
+
+=head3 L<POE::Filter::IRCD> 2.44
+
+=head3 L<POE::Filter::IRCv3> 1.001001
+
+=head3 L<POE::Filter::Ident> 1.16
+
+=head3 L<POE::Filter::JSON> 0.04
+
+=head3 L<POE::Filter::JSON::Incr> 0.03
+
+=head3 L<POE::Filter::KennySpeak> 1.02
+
+=head3 L<POE::Filter::LOLCAT> 1.10
+
+=head3 L<POE::Filter::LZF> 1.70
+
+=head3 L<POE::Filter::LZO> 1.70
+
+=head3 L<POE::Filter::LZW> 1.72
+
+=head3 L<POE::Filter::LZW::Progressive> 0.1
+
+=head3 L<POE::Filter::Log::IPTables> 0.02
+
+=head3 L<POE::Filter::Log::Procmail> 0.03
+
+=head3 L<POE::Filter::Ls> 0.01
+
+=head3 L<POE::Filter::PPPHDLC> 0.01
+
+=head3 L<POE::Filter::ParseWords> 1.06
+
+=head3 L<POE::Filter::Postfix> 0.003
+
+=head3 L<POE::Filter::RecDescent> 0.02
+
+=head3 L<POE::Filter::Redis> 0.02
+
+=head3 L<POE::Filter::Regexp> 1.0
+
+=head3 L<POE::Filter::SMTP> 1.2
+
+=head3 L<POE::Filter::SSL> 0.28
+
+=head3 L<POE::Filter::SimpleHTTP> 0.091710
+
+=head3 L<POE::Filter::Slim::CLI> 0.02
+
+=head3 L<POE::Filter::Snort> 0.031
+
+=head3 L<POE::Filter::Stomp> 0.04
+
+=head3 L<POE::Filter::Transparent::SMTP> 0.2
+
+=head3 L<POE::Filter::XML> 1.140700
+
+=head3 L<POE::Filter::XML::RPC> 0.04
+
+=head3 L<POE::Filter::Zlib> 2.02
+
+=head3 L<POE::Wheel::Audio::Mad> 0.3
+
+=head3 L<POE::Wheel::GnuPG> 0.01
+
+=head3 L<POE::Wheel::MyCurses> 1.2102
+
+=head3 L<POE::Wheel::Null> 0.01
+
+=head3 L<POE::Wheel::Run::Win32> 0.18
+
+=head3 L<POE::Wheel::Sendfile> 0.0200
+
+=head3 L<POE::Wheel::TermKey> 0.02
+
+=head3 L<POE::Wheel::UDP> 0.02
+
+=head3 L<POE::Wheel::VimColor> 0.0
 
 =head2 Event Loops
-=pkg POE::Loop::AnyEvent 0.004
-=pkg POE::Loop::EV 0.06
-=pkg POE::Loop::Event 1.305
-=pkg POE::Loop::Glib 0.038
-=pkg POE::Loop::Gtk 1.306
-=pkg POE::Loop::IO_Async 0.004
-=pkg POE::Loop::Kqueue 0.02
-=pkg POE::Loop::Prima 1.02
-=pkg POE::Loop::Tk 1.305
-=pkg POE::Loop::Wx 0.04
+
+=head3 L<POE::Loop::AnyEvent> 0.004
+
+=head3 L<POE::Loop::EV> 0.06
+
+=head3 L<POE::Loop::Event> 1.305
+
+=head3 L<POE::Loop::Glib> 0.038
+
+=head3 L<POE::Loop::Gtk> 1.306
+
+=head3 L<POE::Loop::IO_Async> 0.004
+
+=head3 L<POE::Loop::Kqueue> 0.02
+
+=head3 L<POE::Loop::Prima> 1.02
+
+=head3 L<POE::Loop::Tk> 1.305
+
+=head3 L<POE::Loop::Wx> 0.04
 
 =head2 Session Types
-=pkg POE::Session::Attribute 0.80
-=pkg POE::Session::AttributeBased 0.10
-=pkg POE::Session::GladeXML2 0.40
-=pkg POE::Session::Irssi 0.50
-=pkg POE::Session::MessageBased 0.111
-=pkg POE::Session::MultiDispatch 1.3
-=pkg POE::Session::Multiplex 0.0600
-=pkg POE::Session::PlainCall 0.0301
-=pkg POE::Session::YieldCC 0.202
+
+=head3 L<POE::Session::Attribute> 0.80
+
+=head3 L<POE::Session::AttributeBased> 0.10
+
+=head3 L<POE::Session::GladeXML2> 0.40
+
+=head3 L<POE::Session::Irssi> 0.50
+
+=head3 L<POE::Session::Message> 0.111
+
+=head3 L<POE::Session::MultiDispatch> 1.3
+
+=head3 L<POE::Session::Multiplex> 0.0600
+
+=head3 L<POE::Session::PlainCall> 0.0301
+
+=head3 L<POE::Session::YieldCC> 0.202
 
 =head2 Debugging and Developing POE
-=pkg POE::API::Hooks 2.03
-=pkg POE::API::Peek 2.20
-=pkg POE::Devel::Benchmarker 0.05
-=pkg POE::Devel::ProcAlike 0.02
-=pkg POE::Devel::Profiler 0.02
-=pkg POE::Devel::Top 0.100
-=pkg POE::Test::Helpers 1.11
-=pkg POE::Test::Loops 1.359
-=pkg POE::XS::Loop::EPoll 1.003
-=pkg POE::XS::Loop::Poll 1.000
-=pkg POE::XS::Queue::Array 0.006
+
+=head3 L<POE::API::Hooks> 2.03
+
+=head3 L<POE::API::Peek> 2.20
+
+=head3 L<POE::Devel::Benchmarker> 0.05
+
+=head3 L<POE::Devel::ProcAlike> 0.02
+
+=head3 L<POE::Devel::Profiler> 0.02
+
+=head3 L<POE::Devel::Top> 0.100
+
+=head3 L<POE::Test::Helpers> 1.11
+
+=head3 L<POE::Test::Loops> 1.359
+
+=head3 L<POE::XS::Loop::EPoll> 1.003
+
+=head3 L<POE::XS::Loop::Poll> 1.000
+
+=head3 L<POE::XS::Queue::Array> 0.006
 
 =head2 POE Extensions
-=pkg POEx::HTTP::Server 0.0902
-=pkg POEx::IRC::Backend 0.024006
-=pkg POEx::IRC::Client::Lite 0.002002
-=pkg POEx::Inotify 0.0201
-=pkg POEx::Role::PSGIServer 1.110670
-=pkg POEx::Tickit 0.02
-=pkg POEx::URI 0.0301
-=pkg POEx::Weather::OpenWeatherMap 0.002001
-=pkg POEx::ZMQ 0.005002
+
+=head3 L<POEx::HTTP::Server> 0.0902
+
+=head3 L<POEx::IRC::Backend> 0.024006
+
+=head3 L<POEx::IRC::Client::Lite> 0.002002
+
+=head3 L<POEx::Inotify> 0.0201
+
+=head3 L<POEx::Role::PSGIServer> 1.110670
+
+=head3 L<POEx::Tickit> 0.02
+
+=head3 L<POEx::URI> 0.0301
+
+=head3 L<POEx::Weather::OpenWeatherMap> 0.002001
+
+=head3 L<POEx::ZMQ> 0.005002
 
 =head2 Uncategorized
-=pkg POE::Declarative 0.09
-=pkg POE::Declare 0.59
-=pkg POE::Declare::HTTP::Client 0.05
-=pkg POE::Declare::HTTP::Online 0.02
-=pkg POE::Declare::HTTP::Server 0.05
-=pkg POE::Declare::Log::File 0.01
-=pkg POE::Event::Message 0.11
-=pkg POE::Framework::MIDI 0.09
-=pkg POE::Future 0.03
-=pkg POE::NFA 1.365
-=pkg POE::Net::SNMP 1.1006
-=pkg POE::Quickie 0.18
-=pkg POE::Stage 0.060
-=pkg POE::Sugar::Args 1.3
-=pkg POE::Sugar::Attributes 0.02
-=pkg POE::TIKC 0.02
-=pkg POE::XUL::RDF 0.0600
-=pkg POE::strict 3.01
+
+=head3 L<POE::Declarative> 0.09
+
+=head3 L<POE::Declare> 0.59
+
+=head3 L<POE::Declare::HTTP::Client> 0.05
+
+=head3 L<POE::Declare::HTTP::Online> 0.02
+
+=head3 L<POE::Declare::HTTP::Server> 0.05
+
+=head3 L<POE::Declare::Log::File> 0.01
+
+=head3 L<POE::Driver::Spread> 0.01
+
+=head3 L<POE::Event::Message> 0.11
+
+=head3 L<POE::Framework::MIDI> 0.09
+
+=head3 L<POE::Future> 0.03
+
+=head3 L<POE::NFA> 1.365
+
+=head3 L<POE::Quickie> 0.18
+
+=head3 L<POE::Stage> 0.060
+
+=head3 L<POE::Sugar::Args> 1.3
+
+=head3 L<POE::Sugar::Attributes> 0.02
+
+=head3 L<POE::TIKC> 0.02
+
+=head3 L<POE::XUL::RDF> 0.0600
+
+=head3 L<POE::strict> 3.01
 
 =head1 AUTHOR
 

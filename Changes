@@ -1,7 +1,12 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
- Fixed the POD as I mangled the format, arg!
+
+1.101 2014-11-09T08:59:09Z UTC
+ - Fixed the POD as I mangled the format, arg!
+
+ [STATISTICS]
+ - code churn: 4 files changed, 802 insertions(+), 12 deletions(-)
 
 1.100 2014-11-09T08:28:58Z UTC
  - Converted to Dist::Zilla for the release process!
