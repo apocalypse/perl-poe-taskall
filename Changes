@@ -1,7 +1,12 @@
 Revision history for {{$dist->name}}
 
 {{$NEXT}}
- Fixed the POD yet again to have the right sections
+
+1.102 2014-11-09T11:03:58Z UTC
+ - Fixed the POD yet again to have the right sections
+
+ [STATISTICS]
+ - code churn: 3 files changed, 33 insertions(+), 42 deletions(-)
 
 1.101 2014-11-09T08:59:09Z UTC
  - Fixed the POD as I mangled the format, arg!

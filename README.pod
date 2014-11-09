@@ -2,17 +2,20 @@
 
 =encoding UTF-8
 
+=for :stopwords Apocalypse cpan testmatrix url annocpan anno bugtracker rt cpants kwalitee
+diff irc mailto metadata placeholders metacpan
+
 =head1 NAME
 
 Task::POE::All - All of POE on CPAN
 
 =head1 VERSION
 
-version 1.101
+  This document describes v1.102 of Task::POE::All - released November 09, 2014 as part of Task-POE-All.
 
 =head1 SYNOPSIS
 
-	die 'Not meant to be used directly';
+	# apoc@box:~$ cpanp install Task::POE::All
 
 =head1 DESCRIPTION
 
@@ -21,6 +24,8 @@ This task contains all distributions under the L<POE> namespace.
 =head1 TASK CONTENTS
 
 =head2 Servers
+
+=head3 L<POE::Component::Server::AsyncEndpoint> 0.10
 
 =head3 L<POE::Component::Server::Bayeux> 0.04
 
@@ -72,6 +77,8 @@ This task contains all distributions under the L<POE> namespace.
 
 =head3 L<POE::Component::Server::RADIUS> 1.08
 
+=head3 L<POE::Component::Server::SMTP> 1.6
+
 =head3 L<POE::Component::Server::SOAP> 1.14
 
 =head3 L<POE::Component::Server::SimpleContent> 1.14
@@ -85,6 +92,8 @@ This task contains all distributions under the L<POE> namespace.
 =head3 L<POE::Component::Server::SimpleXMLRPC> 0.02
 
 =head3 L<POE::Component::Server::Syslog> 1.20
+
+=head3 L<POE::Component::Server::TCP> 1.365
 
 =head3 L<POE::Component::Server::TacacsPlus> 1.11
 
@@ -101,6 +110,8 @@ This task contains all distributions under the L<POE> namespace.
 =head3 L<POE::Component::Client::AMQP> 0.03
 
 =head3 L<POE::Component::Client::AirTunes> 0.01
+
+=head3 L<POE::Component::Client::Asterisk::Manager> 0.08
 
 =head3 L<POE::Component::Client::BigBrother> 1.00
 
@@ -123,6 +134,8 @@ This task contains all distributions under the L<POE> namespace.
 =head3 L<POE::Component::Client::Halo> 0.2
 
 =head3 L<POE::Component::Client::Icecast> 0.6
+
+=head3 L<POE::Component::Client::Ident> 1.16
 
 =head3 L<POE::Component::Client::Keepalive> 0.272
 
@@ -157,8 +170,6 @@ This task contains all distributions under the L<POE> namespace.
 =head3 L<POE::Component::Client::Rcon> 0.23
 
 =head3 L<POE::Component::Client::SMTP> 0.22
-
-=head3 L<POE::Component::Client::SOAP> 0.01
 
 =head3 L<POE::Component::Client::SOCKS> 1.00
 
@@ -198,13 +209,15 @@ This task contains all distributions under the L<POE> namespace.
 
 =head3 L<POE::Component::Archive::Any> 0.002
 
-=head3 L<POE::Component::AssaultCube::ServerQuery> 0.04
+=head3 L<POE::Component::AssaultCube::ServerQuery::Server> 0.04
 
 =head3 L<POE::Component::AtomAggregator> 1.0
 
 =head3 L<POE::Component::Basement> 0.01
 
 =head3 L<POE::Component::BlogCloud> 0.01
+
+=head3 L<POE::Component::Bundle::WebDevelopment> 1.001004
 
 =head3 L<POE::Component::CD::Detect> 1.1
 
@@ -280,6 +293,8 @@ This task contains all distributions under the L<POE> namespace.
 
 =head3 L<POE::Component::IKC> 0.2402
 
+=head3 L<POE::Component::IRC> 6.88
+
 =head3 L<POE::Component::IRC::Object> 0.02
 
 =head3 L<POE::Component::IRC::Plugin::BaseWrap> 1.001001
@@ -289,8 +304,6 @@ This task contains all distributions under the L<POE> namespace.
 =head3 L<POE::Component::IRC::Plugin::Bollocks> 1.00
 
 =head3 L<POE::Component::IRC::Plugin::CPAN::Info> 1.001002
-
-=head3 L<POE::Component::IRC::Plugin::ColorNamer> 2.001003
 
 =head3 L<POE::Component::IRC::Plugin::CoreList> 1.02
 
@@ -336,8 +349,6 @@ This task contains all distributions under the L<POE> namespace.
 
 =head3 L<POE::Component::IRC::Plugin::Seen> 0.001001
 
-=head3 L<POE::Component::IRC::Plugin::Thanks> 1.001001
-
 =head3 L<POE::Component::IRC::Plugin::Trac::RSS> 0.11
 
 =head3 L<POE::Component::IRC::Plugin::URI::Find> 1.10
@@ -361,6 +372,12 @@ This task contains all distributions under the L<POE> namespace.
 =head3 L<POE::Component::IRC::Plugin::WWW::XKCD::AsText> 0.003
 
 =head3 L<POE::Component::IRC::Plugin::WubWubWub> 0.1
+
+=head3 L<POE::Component::IRC::PluginBundle::Toys> 1.001001
+
+=head3 L<POE::Component::IRC::PluginBundle::WebDevelopment> 2.001003
+
+=head3 L<POE::Component::IRC::Service> 0.996
 
 =head3 L<POE::Component::Jabber> 3.00
 
@@ -478,6 +495,8 @@ This task contains all distributions under the L<POE> namespace.
 
 =head3 L<POE::Component::SmokeBox::Uploads::Rsync> 1.000
 
+=head3 L<POE::Component::Spread> 0.02
+
 =head3 L<POE::Component::SpreadClient> 1.002
 
 =head3 L<POE::Component::SubWrapper> 2.01
@@ -501,8 +520,6 @@ This task contains all distributions under the L<POE> namespace.
 =head3 L<POE::Component::WWW::Google::Calculator> 0.03
 
 =head3 L<POE::Component::WWW::Google::Time> 0.0102
-
-=head3 L<POE::Component::WWW::Lipsum> 1.001004
 
 =head3 L<POE::Component::WWW::OhNoRobotCom::Search> 0.002
 
@@ -530,8 +547,6 @@ This task contains all distributions under the L<POE> namespace.
 
 =head2 Data Parsers and Wheels
 
-=head3 L<POE::Filter::Asterisk::Manager> 0.08
-
 =head3 L<POE::Filter::BigBrother> 0.13
 
 =head3 L<POE::Filter::Bzip2> 1.58
@@ -558,15 +573,9 @@ This task contains all distributions under the L<POE> namespace.
 
 =head3 L<POE::Filter::IASLog> 1.08
 
-=head3 L<POE::Filter::IRC> 6.88
-
-=head3 L<POE::Filter::IRC::P10> 0.996
-
 =head3 L<POE::Filter::IRCD> 2.44
 
 =head3 L<POE::Filter::IRCv3> 1.001001
-
-=head3 L<POE::Filter::Ident> 1.16
 
 =head3 L<POE::Filter::JSON> 0.04
 
@@ -601,8 +610,6 @@ This task contains all distributions under the L<POE> namespace.
 =head3 L<POE::Filter::Redis> 0.02
 
 =head3 L<POE::Filter::Regexp> 1.0
-
-=head3 L<POE::Filter::SMTP> 1.2
 
 =head3 L<POE::Filter::SSL> 0.28
 
@@ -672,7 +679,7 @@ This task contains all distributions under the L<POE> namespace.
 
 =head3 L<POE::Session::Irssi> 0.50
 
-=head3 L<POE::Session::Message> 0.111
+=head3 L<POE::Session::MessageBased> 0.111
 
 =head3 L<POE::Session::MultiDispatch> 1.3
 
@@ -740,15 +747,11 @@ This task contains all distributions under the L<POE> namespace.
 
 =head3 L<POE::Declare::Log::File> 0.01
 
-=head3 L<POE::Driver::Spread> 0.01
-
 =head3 L<POE::Event::Message> 0.11
 
 =head3 L<POE::Framework::MIDI> 0.09
 
 =head3 L<POE::Future> 0.03
-
-=head3 L<POE::NFA> 1.365
 
 =head3 L<POE::Quickie> 0.18
 
@@ -760,9 +763,155 @@ This task contains all distributions under the L<POE> namespace.
 
 =head3 L<POE::TIKC> 0.02
 
-=head3 L<POE::XUL::RDF> 0.0600
+=head3 L<POE::XUL::Javascript> 0.0
 
 =head3 L<POE::strict> 3.01
+
+=head1 SUPPORT
+
+=head2 Perldoc
+
+You can find documentation for this module with the perldoc command.
+
+  perldoc Task::POE::All
+
+=head2 Websites
+
+The following websites have more information about this module, and may be of help to you. As always,
+in addition to those websites please use your favorite search engine to discover more resources.
+
+=over 4
+
+=item *
+
+MetaCPAN
+
+A modern, open-source CPAN search engine, useful to view POD in HTML format.
+
+L<http://metacpan.org/release/Task-POE-All>
+
+=item *
+
+Search CPAN
+
+The default CPAN search engine, useful to view POD in HTML format.
+
+L<http://search.cpan.org/dist/Task-POE-All>
+
+=item *
+
+RT: CPAN's Bug Tracker
+
+The RT ( Request Tracker ) website is the default bug/issue tracking system for CPAN.
+
+L<http://rt.cpan.org/NoAuth/Bugs.html?Dist=Task-POE-All>
+
+=item *
+
+AnnoCPAN
+
+The AnnoCPAN is a website that allows community annotations of Perl module documentation.
+
+L<http://annocpan.org/dist/Task-POE-All>
+
+=item *
+
+CPAN Ratings
+
+The CPAN Ratings is a website that allows community ratings and reviews of Perl modules.
+
+L<http://cpanratings.perl.org/d/Task-POE-All>
+
+=item *
+
+CPAN Forum
+
+The CPAN Forum is a web forum for discussing Perl modules.
+
+L<http://cpanforum.com/dist/Task-POE-All>
+
+=item *
+
+CPANTS
+
+The CPANTS is a website that analyzes the Kwalitee ( code metrics ) of a distribution.
+
+L<http://cpants.cpanauthors.org/dist/overview/Task-POE-All>
+
+=item *
+
+CPAN Testers
+
+The CPAN Testers is a network of smokers who run automated tests on uploaded CPAN distributions.
+
+L<http://www.cpantesters.org/distro/T/Task-POE-All>
+
+=item *
+
+CPAN Testers Matrix
+
+The CPAN Testers Matrix is a website that provides a visual overview of the test results for a distribution on various Perls/platforms.
+
+L<http://matrix.cpantesters.org/?dist=Task-POE-All>
+
+=item *
+
+CPAN Testers Dependencies
+
+The CPAN Testers Dependencies is a website that shows a chart of the test results of all dependencies for a distribution.
+
+L<http://deps.cpantesters.org/?module=Task::POE::All>
+
+=back
+
+=head2 Email
+
+You can email the author of this module at C<APOCAL at cpan.org> asking for help with any problems you have.
+
+=head2 Internet Relay Chat
+
+You can get live help by using IRC ( Internet Relay Chat ). If you don't know what IRC is,
+please read this excellent guide: L<http://en.wikipedia.org/wiki/Internet_Relay_Chat>. Please
+be courteous and patient when talking to us, as we might be busy or sleeping! You can join
+those networks/channels and get help:
+
+=over 4
+
+=item *
+
+irc.perl.org
+
+You can connect to the server at 'irc.perl.org' and join this channel: #perl-help then talk to this person for help: Apocalypse.
+
+=item *
+
+irc.freenode.net
+
+You can connect to the server at 'irc.freenode.net' and join this channel: #perl then talk to this person for help: Apocal.
+
+=item *
+
+irc.efnet.org
+
+You can connect to the server at 'irc.efnet.org' and join this channel: #perl then talk to this person for help: Ap0cal.
+
+=back
+
+=head2 Bugs / Feature Requests
+
+Please report any bugs or feature requests by email to C<bug-task-poe-all at rt.cpan.org>, or through
+the web interface at L<http://rt.cpan.org/NoAuth/ReportBug.html?Queue=Task-POE-All>. You will be automatically notified of any
+progress on the request by the system.
+
+=head2 Source Code
+
+The code is open to the world, and available for you to hack on. Please feel free to browse it and play
+with it, or whatever. If you want to contribute patches, please send me a diff or prod me to pull
+from your repository :)
+
+L<https://github.com/apocalypse/perl-poe-taskall>
+
+  git clone https://github.com/apocalypse/perl-poe-taskall.git
 
 =head1 AUTHOR
 
@@ -774,5 +923,29 @@ This software is copyright (c) 2014 by Apocalypse.
 
 This is free software; you can redistribute it and/or modify it under
 the same terms as the Perl 5 programming language system itself.
+
+The full text of the license can be found in the
+F<LICENSE> file included with this distribution.
+
+=head1 DISCLAIMER OF WARRANTY
+
+THERE IS NO WARRANTY FOR THE PROGRAM, TO THE EXTENT PERMITTED BY
+APPLICABLE LAW.  EXCEPT WHEN OTHERWISE STATED IN WRITING THE COPYRIGHT
+HOLDERS AND/OR OTHER PARTIES PROVIDE THE PROGRAM "AS IS" WITHOUT WARRANTY
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, INCLUDING, BUT NOT LIMITED TO,
+THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+PURPOSE.  THE ENTIRE RISK AS TO THE QUALITY AND PERFORMANCE OF THE PROGRAM
+IS WITH YOU.  SHOULD THE PROGRAM PROVE DEFECTIVE, YOU ASSUME THE COST OF
+ALL NECESSARY SERVICING, REPAIR OR CORRECTION.
+
+IN NO EVENT UNLESS REQUIRED BY APPLICABLE LAW OR AGREED TO IN WRITING
+WILL ANY COPYRIGHT HOLDER, OR ANY OTHER PARTY WHO MODIFIES AND/OR CONVEYS
+THE PROGRAM AS PERMITTED ABOVE, BE LIABLE TO YOU FOR DAMAGES, INCLUDING ANY
+GENERAL, SPECIAL, INCIDENTAL OR CONSEQUENTIAL DAMAGES ARISING OUT OF THE
+USE OR INABILITY TO USE THE PROGRAM (INCLUDING BUT NOT LIMITED TO LOSS OF
+DATA OR DATA BEING RENDERED INACCURATE OR LOSSES SUSTAINED BY YOU OR THIRD
+PARTIES OR A FAILURE OF THE PROGRAM TO OPERATE WITH ANY OTHER PROGRAMS),
+EVEN IF SUCH HOLDER OR OTHER PARTY HAS BEEN ADVISED OF THE POSSIBILITY OF
+SUCH DAMAGES.
 
 =cut
